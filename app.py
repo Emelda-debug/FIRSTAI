@@ -19,7 +19,7 @@ client = Client(account_sid, auth_token)
 
 #updating the webhook url for the phone
 phone_number_sid = "PNc41e2f0c589e5726370b22c5a38a13d0"
-webhook_url = "/http://127.0.0.1:8000/ivr"
+webhook_url = "https://9mr9cmz8-8000.inc1.devtunnels.ms/"
 
 phone_number = client.incoming_phone_numbers(phone_number_sid).fetch()
 phone_number.update(voice_url=webhook_url, voice_method='POST')
